@@ -1,0 +1,184 @@
+body{
+font-family: Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+header{
+background:#d63384;
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+nav{
+background:#333;
+text-align:center;
+padding:15px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:50px 20px;
+max-width:900px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.servicos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.botao{
+display:inline-block;
+margin-top:20px;
+background:#25D366;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.galeria img{
+width:100%;
+border-radius:10px;
+height:200px;
+object-fit:cover;
+}
+.card:hover{
+transform:scale(1.05);
+transition:0.3s;
+}
+.whatsapp-fixo{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:30px;
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+.whatsapp-fixo:hover{
+transform:scale(1.1);
+transition:0.3s;
+}
+
+section{
+padding:50px 20px;
+max-width:900px;
+margin:auto;
+animation:fade 1s ease;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.hero{
+background-image:url("https://images.unsplash.com/photo-1522337360788-8b13dee7a37e");
+background-size:cover;
+background-position:center;
+height:500px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero-conteudo{
+background:rgba(0,0,0,0.5);
+padding:40px;
+border-radius:10px;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+.depoimentos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.depoimento{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+font-style:italic;
+}
+
+.depoimento strong{
+display:block;
+margin-top:10px;
+font-style:normal;
+}
+
+.redes{
+margin-top:10px;
+}
+
+.redes a{
+color:white;
+margin:0 10px;
+font-size:20px;
+text-decoration:none;
+}
+
+.redes a:hover{
+color:#25D366;
+}
+
